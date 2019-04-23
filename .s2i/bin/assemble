@@ -1,0 +1,8 @@
+#!/bin/bash
+
+yum install libgdiplus-devel
+yum install glibc-devel.i686  
+
+# call base assemble script
+$STI_SCRIPTS_PATH/assemble >/dev/null 2>&1
+
