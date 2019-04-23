@@ -19,6 +19,6 @@ if [ "$DEV_MODE" == true ]; then
 else
     cd $DOTNET_APP_PATH
 
-    echo "---> Running application ..."
+    echo "---> Running application changed ^_^ ..."
     exec "./$DOTNET_DEFAULT_CMD"
 fi
