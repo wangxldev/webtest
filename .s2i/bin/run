@@ -1,8 +1,8 @@
 #!/bin/bash
 set -e
 
-yum install libgdiplus-devel
-yum install glibc-devel.i686  
+exec "yum install libgdiplus-devel"
+exec "yum install glibc-devel.i686"
 
 if [ "$DEV_MODE" == true ]; then
     # Ignore build folders ('bin', 'obj') and ASP.NET Core static files ('wwwroot').
