@@ -12,3 +12,23 @@
 <h5>rollback test</h5>
 
 <h3> 分发测试-again </h3>
+
+
+<img style="width:100px; margin-left:10px; cursor:pointer;" id="imgVerifyCode" />
+
+@section Scripts{
+    <script>
+        $(function () {
+
+            $("#imgVerifyCode").click(function() {
+                $("#imgVerifyCode").attr('src', '@Url.Action("GetValidateCode")?' + Math.random());
+
+            });
+
+            $("#imgVerifyCode").attr('src', '@Url.Action("GetValidateCode")?' + Math.random());
+        })
+    </script>
+}
+
+
+
