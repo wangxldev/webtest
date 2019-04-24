@@ -1,2 +1,2 @@
-DOTNET_STARTUP_PROJECT=../../src/OpenshiftTest/OpenshiftTest.csproj
+DOTNET_STARTUP_PROJECT=src/OpenshiftTest/OpenshiftTest.csproj
 DOTNET_RESTORE_DISABLE_PARALLEL=true
