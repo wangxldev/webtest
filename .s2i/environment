@@ -1,5 +1,0 @@
-DOTNET_STARTUP_PROJECT=src/OpenshiftTest/OpenshiftTest.csproj
-DOTNET_CONFIGURATION=Debug
-DOTNET_RESTORE_SOURCES=https://api.nuget.org/v3/index.json https://www.myget.org/F/s2i-dotnetcore
-DOTNET_VERBOSITY=detailed
-DOTNET_RESTORE_DISABLE_PARALLEL=true
