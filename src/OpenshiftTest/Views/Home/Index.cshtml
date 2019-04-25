@@ -1,4 +1,7 @@
-﻿@{
+﻿@using Microsoft.Extensions.Configuration
+@inject IConfiguration Configuration
+
+@{
     ViewData["Title"] = "Home Page";
 }
 
@@ -12,6 +15,8 @@
 <h5>rollback test</h5>
 
 <h3> 分发测试-again </h3>
+
+<h1 style="color: blue;">config test:@Configuration["Test"]</h1>
 
 
 <img style="width:100px; margin-left:10px; cursor:pointer;" id="imgVerifyCode" />
