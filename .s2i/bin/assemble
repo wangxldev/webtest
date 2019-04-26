@@ -5,3 +5,7 @@ $STI_SCRIPTS_PATH/assemble >/dev/null 2>&1
 
 # print the resolved dependencies
 cat ~/app/*.deps.json
+
+yum install -y libgdiplus-devel
+yum install -y glibc-devel.i686  
+
