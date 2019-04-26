@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Diagnostics;
 using System.Linq;
+using System.Net.Http;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
@@ -44,6 +45,21 @@ namespace OpenshiftTest.Controllers
             catch (Exception ex)
             {
                 return Content(string.Format("{0}++++++{1}{2}", ex.Message, System.Environment.NewLine, ex.StackTrace));
+            }
+        }
+
+        [HttpGet]
+        public async Task<string> Proxy(string url)
+        {
+            if (string.IsNullOrWhiteSpace(url))
+            {
+                return "empty";
+            }
+
+            using (var client = new HttpClient())
+            {
+                var result = await client.GetStringAsync(url);
+                return result;
             }
         }
     }
