@@ -1,4 +1,6 @@
-﻿@using Microsoft.Extensions.Configuration
+﻿@using Microsoft.AspNetCore.Http
+@using Microsoft.AspNetCore.Http.Extensions
+@using Microsoft.Extensions.Configuration
 @inject IConfiguration Configuration
 
 @{
@@ -18,6 +20,9 @@
 
 <h1 style="color: blue;">config test:@Configuration["Test"]</h1>
 
+<h1>config DisplayUrl:@Context.Request.GetDisplayUrl()</h1>
+
+<h1>config Host:@Context.Request.Headers["Host"]</h1>
 
 <img style="width:100px; margin-left:10px; cursor:pointer;" id="imgVerifyCode" />
 
