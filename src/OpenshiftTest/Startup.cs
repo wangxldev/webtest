@@ -53,6 +53,8 @@ namespace OpenshiftTest
             app.UseStaticFiles();
             app.UseCookiePolicy();
 
+            app.UseForwardedHeaders();
+
             app.UseMvc(routes =>
             {
                 routes.MapRoute(
