@@ -24,6 +24,11 @@
 
 <h1>config Host:@Context.Request.Headers["Host"]</h1>
 
+<h1>RemoteIpAddress: @Context.Connection.RemoteIpAddress</h1>
+<h1>RemotePort: @Context.Connection.RemotePort</h1>
+<h1>LocalIpAddress: @Context.Connection.LocalIpAddress</h1>
+<h1>LocalPort: @Context.Connection.LocalPort</h1>
+
 <img style="width:100px; margin-left:10px; cursor:pointer;" id="imgVerifyCode" />
 
 @section Scripts{
