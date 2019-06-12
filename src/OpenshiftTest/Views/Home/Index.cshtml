@@ -29,6 +29,9 @@
 <h1>LocalIpAddress: @Context.Connection.LocalIpAddress</h1>
 <h1>LocalPort: @Context.Connection.LocalPort</h1>
 
+
+<h1>x-forwarded-for" @Context.Request.Headers["x-forwarded-for"]</h1>
+
 <img style="width:100px; margin-left:10px; cursor:pointer;" id="imgVerifyCode" />
 
 @section Scripts{
